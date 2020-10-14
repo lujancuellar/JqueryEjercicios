@@ -1,2 +1,2 @@
-# masEjercicios
-Aca añado aun mas ejercicios de JavaScript pero un poco mas ordenados y con bootstrap.
+# JqueryEjercicios
+Aca añado ejercicios de jquery pero un poco mas ordenados y con bootstrap.
