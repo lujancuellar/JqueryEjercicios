@@ -84,22 +84,38 @@ $(document).ready(function() {
     });    
  });
 
- //Galeria de imagenes.
+ //Galería de imágenes que desaparecen cuando se pasa el mouse por encima.
+
  $(document).ready(function(){
     $("#imagen1").mouseover(function(){
-      $("#imagen1").fadeOut("slow");
-      $("#div1").text("Paisaje");
+      $("#imagen1").fadeOut(4000, function(){
+        $("#div1").text("Arboles en otoño");
+      });
     });
   });
 
   $(document).ready(function(){
     $("#imagen2").mouseover(function(){
-      $("#imagen2").fadeOut(3000);
+      $("#imagen2").fadeOut(4000, function(){
+        $("#div2").text("Carretera");
+      });
+      
     });
   });
 
   $(document).ready(function(){
     $("#imagen3").mouseover(function(){
-      $("#imagen3").fadeOut(3000);
+      $("#imagen3").fadeOut(4000, function(){
+        $("#div3").text("Montañas en invierno");
+      });
     });
   });
+
+  $(document).ready(function(){
+    $("#imagen4").mouseover(function(){
+      $("#imagen4").fadeOut(4000, function(){
+        $("#div4").text("Noche estrellada");
+      });
+    });
+  });
+  
