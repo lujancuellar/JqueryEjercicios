@@ -38,7 +38,7 @@ $(document).ready(function(){
 $(document).ready(function() {
     $("#h1").on({
       click: function() {
-         $(".fuente").css({"font-family": "Roboto"});
+         $(".fuente").css({"font-family": "Roboto", "color": "red"});
       }
     });    
  });
@@ -46,7 +46,7 @@ $(document).ready(function() {
  $(document).ready(function() {
     $("#h2").on({
       click: function() {
-         $(".fuente").css({"font-family": "Sansita Swashed"});
+         $(".fuente").css({"font-family": "Sansita Swashed" , "color": "blue"});
       }
     });    
  });
@@ -55,7 +55,7 @@ $(document).ready(function() {
  $(document).ready(function() {
     $("#h3").on({
       click: function() {
-         $(".fuente").css({"font-family": "Piedra, cursive"});
+         $(".fuente").css({"font-family": "Piedra, cursive" , "color": "yellow"});
       }
     });    
  });
@@ -63,7 +63,7 @@ $(document).ready(function() {
  $(document).ready(function() {
     $("#h4").on({
       click: function() {
-         $(".fuente").css({"font-family": "Koulen"});
+         $(".fuente").css({"font-family": "Koulen","color": "violet" });
       }
     });    
  });
@@ -71,7 +71,7 @@ $(document).ready(function() {
  $(document).ready(function() {
     $("#h5").on({
       click: function() {
-         $(".fuente").css({"font-family": "Chilanka"});
+         $(".fuente").css({"font-family": "Chilanka", "color": "orange"});
       }
     });    
  });
@@ -79,7 +79,7 @@ $(document).ready(function() {
  $(document).ready(function() {
     $("#h6").on({
       click: function() {
-         $(".fuente").css({"font-family": "Krona One, Sans Serif"});
+         $(".fuente").css({"font-family": "Krona One, Sans Serif" , "color": "lightblue"});
       }
     });    
  });
