@@ -24,7 +24,7 @@ $(document).ready(function(){
     //});
 //});
 
-//ejercicio de añadir parrafo al final. Los dos hacen 
+//ejercicio de añadir parrafo al final del body.
 
 $(document).ready(function(){
     $("#boton").click(function(){
