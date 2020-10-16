@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function() {
-    $("h1").on({
+    $("#h1").on({
       click: function() {
          $(".fuente").css({"font-family": "Roboto"});
       }
@@ -44,7 +44,7 @@ $(document).ready(function() {
  });
 
  $(document).ready(function() {
-    $("h2").on({
+    $("#h2").on({
       click: function() {
          $(".fuente").css({"font-family": "Sansita Swashed"});
       }
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
  
  $(document).ready(function() {
-    $("h3").on({
+    $("#h3").on({
       click: function() {
          $(".fuente").css({"font-family": "Piedra, cursive"});
       }
@@ -61,7 +61,7 @@ $(document).ready(function() {
  });
 
  $(document).ready(function() {
-    $("h4").on({
+    $("#h4").on({
       click: function() {
          $(".fuente").css({"font-family": "Koulen"});
       }
@@ -69,7 +69,7 @@ $(document).ready(function() {
  });
 
  $(document).ready(function() {
-    $("h5").on({
+    $("#h5").on({
       click: function() {
          $(".fuente").css({"font-family": "Chilanka"});
       }
@@ -77,7 +77,7 @@ $(document).ready(function() {
  });
 
  $(document).ready(function() {
-    $("h6").on({
+    $("#h6").on({
       click: function() {
          $(".fuente").css({"font-family": "Krona One, Sans Serif"});
       }
