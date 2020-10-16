@@ -1,8 +1,8 @@
 //Carga texto "READY!" una vez que el documento ha terminado de cargar.
 
-$(document).ready(function() {
-    alert ("READY!");
-});
+//$(document).ready(function() {
+    //alert ("READY!");
+//});
 
 //Crear un boton "Mostrar contenido oculto", que muestre un texto al hacer click.
 $(document).ready(function(){ 
@@ -83,4 +83,23 @@ $(document).ready(function() {
       }
     });    
  });
- 
+
+ //Galeria de imagenes.
+ $(document).ready(function(){
+    $("#imagen1").mouseover(function(){
+      $("#imagen1").fadeOut("slow");
+      $("#div1").text("Paisaje");
+    });
+  });
+
+  $(document).ready(function(){
+    $("#imagen2").mouseover(function(){
+      $("#imagen2").fadeOut(3000);
+    });
+  });
+
+  $(document).ready(function(){
+    $("#imagen3").mouseover(function(){
+      $("#imagen3").fadeOut(3000);
+    });
+  });
