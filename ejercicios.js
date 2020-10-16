@@ -118,4 +118,11 @@ $(document).ready(function() {
       });
     });
   });
-  
+
+  //Texto que al apretarlo muestra otro texto.
+
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
