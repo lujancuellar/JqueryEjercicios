@@ -13,16 +13,16 @@ $(document).ready(function(){
 
  //Recorrer párrafos y que cada uno tenga un color distinto.
  
- $(document).ready(function() {
-    let myColors = [
-        '#f00', '#abc', '#123', '#ff2',
-    ];
-    let i = 0;
-    $('p').each(function() {
-        $(this).css('background-color', myColors[i]);
-        i = (i + 1) % myColors.length;
-    });
-});
+ //$(document).ready(function() {
+    //let myColors = [
+     //   '#f00', '#abc', '#123', '#ff2',
+    //];
+   // let i = 0;
+    //$('p').each(function() {
+        //$(this).css('background-color', myColors[i]);
+       // i = (i + 1) % myColors.length;
+    //});
+//});
 
 //ejercicio de añadir parrafo al final. Los dos hacen 
 
