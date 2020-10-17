@@ -134,18 +134,20 @@ $(document).ready(function() {
       $("#ver").text("Ver menos")});
     });
   });
-
-  //lista de compras
+ 
+  
+  //lista de compras.
 
   $(document).ready(function(){
     $("#sumar").click(function(){
       valor = $("#descripcion").val();
-      cantidad = $("#cantidad").val();
-      precio = $("#precio").val();
+      cantidad = parseInt($("#cantidad").val(), 10);
+      precio = parseInt($("#precio").val(), 10);
 
       if (valor != "" && cantidad != "" && precio != "") {
         $("#resultado").append(valor + " " + cantidad + " "+ precio + "<br>");
-      } else if (valor == ""|| cantidad == "" || precio == "") {
+      }
+      else if (valor == ""|| cantidad == "" || precio == "") {
         $("#resultado").append("Faltan valores");
       }
     });
