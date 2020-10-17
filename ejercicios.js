@@ -140,15 +140,17 @@ $(document).ready(function() {
 
   $(document).ready(function(){
     $("#sumar").click(function(){
-      valor = $("#descripcion").val();
-      cantidad = parseInt($("#cantidad").val(), 10);
-      precio = parseInt($("#precio").val(), 10);
+      let valor = $("#descripcion").val();
+      let cantidad = parseInt($("#cantidad").val(), 10);
+      let precio = parseInt($("#precio").val(), 10);
+  
 
       if (valor != "" && cantidad != "" && precio != "") {
-        $("#resultado").append(valor + " " + cantidad + " "+ precio + "<br>");
-      }
-      else if (valor == ""|| cantidad == "" || precio == "") {
+        $("#resultado").append("<li>" + valor + " " + cantidad + " "+ precio + "</li>" + "<br>" );
+      } else if (valor == ""|| cantidad == "" || precio == "") {
         $("#resultado").append("Faltan valores");
-      }
+      } 
     });
   })
+
+  //
