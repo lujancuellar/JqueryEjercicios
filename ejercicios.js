@@ -126,3 +126,27 @@ $(document).ready(function() {
       $("#panel").slideToggle("slow");
     });
   });
+
+  //Crear un boton con el efecto ver mas.
+  $(document).ready(function(){
+    $("#ver").click(function(){
+      $("#mostrarTexto").toggle(function(){
+      $("#ver").text("Ver menos")});
+    });
+  });
+
+  //lista de compras
+
+  $(document).ready(function(){
+    $("#sumar").click(function(){
+      valor = $("#descripcion").val();
+      cantidad = $("#cantidad").val();
+      precio = $("#precio").val();
+
+      if (valor != "" && cantidad != "" && precio != "") {
+        $("#resultado").append(valor + " " + cantidad + " "+ precio + "<br>");
+      } else if (valor == ""|| cantidad == "" || precio == "") {
+        $("#resultado").append("Faltan valores");
+      }
+    });
+  })

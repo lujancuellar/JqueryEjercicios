@@ -1,4 +1,8 @@
-.row {
-    background-color: lightskyblue;
+
+#panel {
+    display: none;
 }
 
+#mostrarTexto {
+    display: none;
+}

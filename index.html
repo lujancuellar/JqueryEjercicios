@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="ejercicios.js"></script>
     <title>Ejercicios de Jquery</title>
 </head>
@@ -19,7 +20,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-             <h1></h1>
+             <button id="ver">Ver mas</button>
+             <p id="mostrarTexto">Texto oculto</p>
+            </div>
+            <div id="flip">Sobre la empresa</div>
+        </br>
+            <div id="panel">
+                Esto contiene informacion importante sobre la empresa
             </div>
             <div class="col-sm-6">
             <h2>Al apretar este enlace se mostrara un texto debajo</h2>
@@ -68,11 +75,12 @@
     <div clas="container">
         <div class="row">
             <div class="col-sm-12">
-                <label for="Descripción" id="Descripcion">Descripcion</label><input type="text" name="descripcion">
-                <label for="Cantidad">Cantidad</label><input type="number">
-                <label for="Precio">Precio Unitario</label><input type="number">
+                <label for="Descripción">Descripcion</label><input type="text" name="descripcion"id="descripcion" >
+                <label for="Cantidad">Cantidad</label><input type="number" id="cantidad">
+                <label for="Precio">Precio Unitario</label><input type="number" id="precio">
                 <button id="sumar">+</button>
                 <p id="resultado"></p>
+                <p id="total"></p>
             </div>
         </div>
     </div>
@@ -93,10 +101,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div id="flip">Sobre la empresa</div>
-                <div id="panel">
-                    Esto contiene informacion importante sobre la empresa
-                </div>
+                   
                 </div>
             </div>
         </div>
