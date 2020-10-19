@@ -168,3 +168,12 @@ $(document).ready(function(){
    }
  })
 })
+
+//Redirigir a links de google y stackoverflow.
+
+$(document).ready(function(){
+  $("#redirigir").click(function(){
+    $("#google").text("Ir a Stackoverflow");
+    $("a[href='https://google.com").attr('href', 'https://stackoverflow.com/')
+  })
+})
