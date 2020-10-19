@@ -148,9 +148,23 @@ $(document).ready(function() {
       if (valor != "" && cantidad != "" && precio != "") {
         $("#resultado").append("<li>" + valor + " " + cantidad + " "+ precio + "</li>" + "<br>" );
       } else if (valor == ""|| cantidad == "" || precio == "") {
-        $("#resultado").append("Faltan valores");
+        $("#resultado").append("Faltan valores" + "</br>");
       } 
     });
   })
 
-  //
+  //checkbox que por defecto este desactivado.
+
+$(document).ready(function(){
+  let checkbox = $("#checkbox");
+
+ checkbox.change(function() {
+   let otroCheck = $(this);
+   let estaChequeado = otroCheck.prop("checked");
+   if (estaChequeado) {
+     $("#submit").prop("disabled", false);
+   } else {
+    $("#submit").prop("disabled", true);
+   }
+ })
+})
