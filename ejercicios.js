@@ -136,19 +136,20 @@ $(document).ready(function() {
   });
  
   
-  //lista de compras.
+  //lista de compras. Sin terminar.
 
   $(document).ready(function(){
     $("#sumar").click(function(){
       let valor = $("#descripcion").val();
       let cantidad = parseInt($("#cantidad").val(), 10);
       let precio = parseInt($("#precio").val(), 10);
+      let total = cantidad*precio;
   
 
       if (valor != "" && cantidad != "" && precio != "") {
-        $("#resultado").append("<li>" + valor + " " + cantidad + " "+ precio + "</li>" + "<br>" );
+        $("#resultado").append("<p>" + valor + " " + cantidad + " "+ precio + "</p>");
       } else if (valor == ""|| cantidad == "" || precio == "") {
-        $("#resultado").append("Faltan valores" + "</br>");
+        $("#resultado").append("<p>Faltan valores</p>");
       } 
     });
   })
@@ -177,3 +178,23 @@ $(document).ready(function(){
     $("a[href='https://google.com").attr('href', 'https://stackoverflow.com/')
   })
 })
+
+//Fijarse si un texto es un palindromo. Sin terminar.
+
+function checkPalindrom (str) {
+  return str == str.split('').reverse().join('');
+}
+
+//Caracteres restantes. Con js.
+
+function Contar(obj){
+  let strLength = obj.value.length;
+  let maxLength = obj.dataset.max;
+  let caracQueQuedan = (maxLength - strLength);
+
+  if(caracQueQuedan > 0){
+      document.getElementById("textoContar").innerHTML = caracQueQuedan+ ' restantes de 80 caracteres';
+  }
+}
+
+//

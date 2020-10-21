@@ -40,7 +40,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-              
+                <h2>Ingresa texto y te dira cuantos caracteres te quedan</h2>
+                <textarea id="textarea"></textarea> <span id='remainingC'></span>
             </div>
             <div class="col-sm-6">
             <button id="boton">Boton</button>
@@ -72,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div clas="container">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <label for="Descripción">Descripcion</label><input type="text" name="descripcion"id="descripcion">
@@ -110,5 +111,8 @@
                  </div>
             </div>
         </div>
+        <h2>Ingresa texto y te dira cuantos caracteres te quedan</h2>
+        <textarea type="text" id="textoMensaje" maxlength="80" onkeypress="Contar(this);" onkeydown="Contar(this);" required data-max=80></textarea>
+        <span id="textoContar">80</span>
 </body>
 </html>
